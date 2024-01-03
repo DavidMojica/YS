@@ -544,6 +544,22 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.underline {
-  text-decoration-line: underline;
+.h-screen {
+  height: 100vh;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
