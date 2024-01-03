@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "echarts": "^5.4.3"
+    "echarts": "^5.4.3",
+    "tailwindcss-plugins": "^0.3.0"
   },
   "devDependencies": {
     "@types/echarts": "^4.9.22",

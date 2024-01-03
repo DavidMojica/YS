@@ -1,0 +1,13 @@
+@keyframes parallaxAnimation {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-50%);
+    }
+  }
+  
+  .animate-parallax {
+    animation: parallaxAnimation 20s infinite linear;
+  }
+  

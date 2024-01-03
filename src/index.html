@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./output.css">
-    
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Parallax Effect with Tailwind CSS</title>
 </head>
-<body>
-
-    <div id="main" style="width: 600px; height: 400px;"></div>
-    <script src="../build/essentials.js" type="module"></script>
+<body class="overflow-hidden">
+  <div class="parallax-container relative h-screen">
+    <div class="parallax-image absolute top-0 left-0 w-full h-full bg-cover bg-center animate-parallax"></div>
+    <!-- Contenido de tu página aquí -->
+    <div class="content flex items-center justify-center h-full text-white">
+      <div class="text-center">
+        <h1 class="text-4xl font-bold mb-4">Tu Contenido</h1>
+        <p class="text-lg">Descripción de tu contenido...</p>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
 </body>
 </html>
