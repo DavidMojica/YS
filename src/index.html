@@ -17,8 +17,8 @@
 </head>
 <body class="overflow-x-hidden">
     <div class="bg-cover bg-center h-screen w-screen flex flex-col items-center" style="background-image: url('../resources/mainBG.jpg');">
-        <div class="font-extrabold my-10 md:my-24 text-center">
-            <span class=" text-3xl md:text-5xl lg:text-6xl xl:text-7xl mx-auto animate-gradient text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500 transition-all duration-1000 shadow-around">
+        <div class="font-extrabold my-10 md:my-24 lg:my-30 xl:my-40  text-center">
+            <span class=" text-3xl md:text-5xl lg:text-6xl xl:text-8xl mx-auto animate-gradient text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500 transition-all duration-1000 shadow-around">
                 <i class="fas fa-heart " aria-hidden="true"></i> Yeison & Yurih <i class="fas fa-heart " aria-hidden="true"></i>
             </span>
             <br>
@@ -29,15 +29,18 @@
         <div class="my-10 ">
             <a href="#section2" id="section1Nav" class="font-extrabold"></a>
         </div>
-        <div class="before:absolute before:bottom-0 before:left-0 before:w-full before:h-16 before:bg-gradient-to-t before:from-cyan-clouds before:to-transparent before:z-90"></div>
+        <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t w-screen from-cyan-clouds to-transparent z-10"></div>
     </div>
-    <div class="h-screen w-screen flex flex-col items-center">
-        <img class="object-cover w-full h-full" src="../resources/clouds.jpg" alt="Clouds">
+    
+    <div id="preSection2" class="h-screen w-screen flex flex-col items-center bg-cover bg-center" style="background-image: url('../resources/clouds.jpg');">
+        <div class="block w-screen left-0 right-0 top-94 h-16 bg-gradient-to-t from-cyan-clouds-light to-transparent z-10"></div>
+        <div class="fixed w-screen left-0 right-0 top-0 h-16 bg-gradient-to-b from-cyan-clouds-light to-transparent z-10"></div>
+        <div class="fixed w-screen left-0 right-0 bottom-0 h-16 bg-gradient-to-t from-cyan-clouds-light to-transparent z-10"></div>
         
-      </div>
+    </div>
 
     <div class="h-screen w-screen bg-cover bg-center flex flex-col items-center" id="section2" style="background-image: url('../resources/section2BG.jpg');">
-
+        
     </div>
     
     
