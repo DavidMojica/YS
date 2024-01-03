@@ -1,6 +1,25 @@
-import * as echarts from 'echarts';
+import * as echarts from 'echarts/core';
+import {
+  TooltipComponent,
+  TooltipComponentOption,
+  LegendComponent,
+  LegendComponentOption
+} from 'echarts/components';
+import { PieChart, PieSeriesOption } from 'echarts/charts';
+import { LabelLayout } from 'echarts/features';
+import { CanvasRenderer } from 'echarts/renderers';
 
-type EChartsOption = echarts.EChartsOption;
+echarts.use([
+  TooltipComponent,
+  LegendComponent,
+  PieChart,
+  CanvasRenderer,
+  LabelLayout
+]);
+
+type EChartsOption = echarts.ComposeOption<
+  TooltipComponentOption | LegendComponentOption | PieSeriesOption
+>;
 
 var chartDom = document.getElementById('main')!;
 var myChart = echarts.init(chartDom);
