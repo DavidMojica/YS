@@ -2,8 +2,17 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        'cyan-clouds': '#4FC8F3',
+        'cyan-clouds-light': '#79CAF9',
+      },
+      fontFamily:{
+        'rubik-doodle': ['Rubik Doodle Shadow', 'cursive'],
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+  ],
 }
 

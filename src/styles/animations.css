@@ -1,0 +1,19 @@
+
+
+@keyframes gradient2 {
+    0% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: -100% 50%;
+    }
+}
+
+.animate-gradient {
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #ec4899, #8a2be2);
+    animation: gradient2 5s ease-in-out infinite;
+}
