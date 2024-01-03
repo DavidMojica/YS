@@ -1,12 +1,3 @@
-/* styles.css */
-@import url('../node_modules/font-awesome/css/font-awesome.min.css');
-
-/*FA ICONS*/
-@import "@{'../../../../node_modules/font-awesome/less/variables.less";
-@import "@{'../../../../node_modules/font-awesome/less/mixins.less";
-@import "@{'../../../../node_modules/font-awesome/less/path.less";
-@import "@{'../../../../node_modules/font-awesome/less/core.less";
-@import "@{'../../../../node_modules/font-awesome/less/icons.less";
 
 
 @keyframes gradient2 {
