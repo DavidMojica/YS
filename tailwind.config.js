@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        'azul-claro': '#243cff',
-        'azul-oscuro': '#0d1b3e',
+        'cyan-clouds': '#4FC8F3',
+        'cyan-clouds-light': '#79CAF9',
       },
       fontFamily:{
         'rubik-doodle': ['Rubik Doodle Shadow', 'cursive'],

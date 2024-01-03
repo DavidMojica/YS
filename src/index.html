@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/app.css">
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="styles/animations.css">
-    <link rel="stylesheet" href="styles/app.css">
     <link rel="stylesheet" href="styles/btn_stars.css">
 
     <!-- Scripts -->
     <script src="../build/elements.js" defer></script>
     <script src="../build/DOMManipulation.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <title>Document</title>
 </head>
-<body class="overflow-hidden">
+<body class="overflow-x-hidden">
     <div class="bg-cover bg-center h-screen w-screen flex flex-col items-center" style="background-image: url('../resources/mainBG.jpg');">
         <div class="font-extrabold my-10 md:my-24 text-center">
             <span class=" text-3xl md:text-5xl lg:text-6xl xl:text-7xl mx-auto animate-gradient text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500 transition-all duration-1000 shadow-around">
@@ -26,8 +27,17 @@
             </span>
         </div>
         <div class="my-10 ">
-            <a href="" id="section1Nav" class="font-extrabold"></a>
+            <a href="#section2" id="section1Nav" class="font-extrabold"></a>
         </div>
+        <div class="before:absolute before:bottom-0 before:left-0 before:w-full before:h-16 before:bg-gradient-to-t before:from-cyan-clouds before:to-transparent before:z-90"></div>
+    </div>
+    <div class="h-screen w-screen flex flex-col items-center">
+        <img class="object-cover w-full h-full" src="../resources/clouds.jpg" alt="Clouds">
+        
+      </div>
+
+    <div class="h-screen w-screen bg-cover bg-center flex flex-col items-center" id="section2" style="background-image: url('../resources/section2BG.jpg');">
+
     </div>
     
     
