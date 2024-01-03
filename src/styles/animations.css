@@ -1,0 +1,28 @@
+/* styles.css */
+@import url('../node_modules/font-awesome/css/font-awesome.min.css');
+
+/*FA ICONS*/
+@import "@{'../../../../node_modules/font-awesome/less/variables.less";
+@import "@{'../../../../node_modules/font-awesome/less/mixins.less";
+@import "@{'../../../../node_modules/font-awesome/less/path.less";
+@import "@{'../../../../node_modules/font-awesome/less/core.less";
+@import "@{'../../../../node_modules/font-awesome/less/icons.less";
+
+
+@keyframes gradient2 {
+    0% {
+        background-position: 100% 50%;
+    }
+    50% {
+        background-position: 0 50%;
+    }
+    100% {
+        background-position: -100% 50%;
+    }
+}
+
+.animate-gradient {
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #ec4899, #8a2be2);
+    animation: gradient2 5s ease-in-out infinite;
+}
