@@ -3,12 +3,18 @@ namespace DOMElemets{
     export class StarButton {
         private button: HTMLButtonElement;
       
-        constructor(type:'button' | 'submit' | 'reset'= 'button', text:string='Default', name:string='', icon:string[] = []) {
+        constructor(type:'button' | 'submit' | 'reset'= 'button', text:string='Default', name:string='', icon:string[] = [], classes:string[]=[], fontClass?:string) {
           this.button = document.createElement('button');
           this.button.type = type;
           this.button.name = name;
-          this.button.classList.add('btn_star');
+          this.button.classList.add('btn_star', ...classes);
+        
+          if(fontClass){
+            this.button.classList.add(fontClass);
+          }
+
           this.button.innerText = text;
+          
       
           const starIcon = document.createElement('i');
           starIcon.classList.add(...icon);
@@ -36,8 +42,10 @@ namespace DOMElemets{
           }
         }
       
-        display(container:HTMLElement):void{
-            container.appendChild(this.button);
+        display(container:HTMLElement|null):void{
+            if (container){
+                container.appendChild(this.button);
+            }
         }
         
         remove(container:HTMLElement):void{
