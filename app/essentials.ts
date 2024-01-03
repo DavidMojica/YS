@@ -14,7 +14,7 @@ echarts.use([
   LegendComponent,
   PieChart,
   CanvasRenderer,
-  LabelLayout
+  LabelLayout 
 ]);
 
 type EChartsOption = echarts.ComposeOption<
