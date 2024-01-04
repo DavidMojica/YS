@@ -21,4 +21,14 @@ var Actions;
         }
     }
     Actions.Slidein = Slidein;
+    function Displace(e, target) {
+        e.preventDefault();
+        if (target) {
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    }
+    Actions.Displace = Displace;
 })(Actions || (Actions = {}));

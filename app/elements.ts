@@ -3,15 +3,11 @@ namespace DOMElemets{
     export class StarButton {
         private button: HTMLButtonElement;
       
-        constructor(type:'button' | 'submit' | 'reset'= 'button', text:string='Default', name:string='', icon:string[] = [], classes:string[]=[], fontClass?:string) {
+        constructor(type:'button' | 'submit' | 'reset'= 'button', text:string='Default', name:string='', icon:string[] = [], classes:string[]=[]) {
           this.button = document.createElement('button');
           this.button.type = type;
           this.button.name = name;
           this.button.classList.add('btn_star', ...classes);
-        
-          if(fontClass){
-            this.button.classList.add(fontClass);
-          }
 
           this.button.innerText = text;
           

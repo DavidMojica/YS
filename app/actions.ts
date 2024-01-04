@@ -7,13 +7,24 @@ namespace Actions{
             }, duration * 1000)
         };
     }
-    
+
     export class Slidein extends Animate{
         private name:string = "animate-slidein";
         private duration:number = 3;
         Animate(element:HTMLElement): void {
             element.classList.add(this.name);
             this.RemoveAnimation(element,this.name,this.duration);
+        }
+    }
+
+
+    export function Displace(e:MouseEvent, target:HTMLElement):void{
+        e.preventDefault();
+        if (target) {
+            target.scrollIntoView({
+                behavior:"smooth",
+                block:"start"
+            });
         }
     }
 }

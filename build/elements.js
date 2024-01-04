@@ -3,14 +3,11 @@
 var DOMElemets;
 (function (DOMElemets) {
     class StarButton {
-        constructor(type = 'button', text = 'Default', name = '', icon = [], classes = [], fontClass) {
+        constructor(type = 'button', text = 'Default', name = '', icon = [], classes = []) {
             this.button = document.createElement('button');
             this.button.type = type;
             this.button.name = name;
             this.button.classList.add('btn_star', ...classes);
-            if (fontClass) {
-                this.button.classList.add(fontClass);
-            }
             this.button.innerText = text;
             const starIcon = document.createElement('i');
             starIcon.classList.add(...icon);
