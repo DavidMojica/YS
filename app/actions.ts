@@ -32,8 +32,7 @@ namespace Actions {
             }, seconds * 1000);
         }
     }
-
-
+    
     export function Displace(e: MouseEvent, target: HTMLElement): void {
         e.preventDefault();
         if (target) {
