@@ -14,6 +14,14 @@ const section2NavN:HTMLElement | null = document.getElementById('section2NavN');
 const section2NavButtonNext = new DOMElemets.StarButton("button", "Noviembre","", ["fa", "fa-arrow-down"])
 section2NavButtonNext.display(section2NavN);
 
+const section3NavB:HTMLElement | null = document.getElementById('section3NavB');
+const section3NavButtonBack = new DOMElemets.StarButton("button", "Volver ", "", ['fa', 'fa-arrow-up']);
+section3NavButtonBack.display(section3NavB);
+
+const section3NavN:HTMLElement | null = document.getElementById('section3NavN');
+const section3NavButtonNext = new DOMElemets.StarButton("button", "Continuar ", "", ['fa', 'fa-arrow-right']);
+section3NavButtonNext.display(section3NavN);
+
 //Desplazar entre secciones
 //Animate section 2 header
 const SlideinAction = new Actions.Slidein();

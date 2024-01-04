@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es" class="scroll-smooth "> 
+    <!-- overflow-hidden -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,8 @@
     <script src="../build/DOMManipulation.js" defer></script>
     <script src="../build/actions.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <title>Document</title>
+    <link rel="shortcut icon" href="../resources/pics/wow.jpg" type="image/x-icon">
+    <title>Yeison & Yurih</title>
 </head>
 <body class="overflow-x-hidden">
     <div id="section1" class="bg-cover bg-center h-screen w-screen flex flex-col items-center" style="background-image: url('../resources/mainBG.jpg');">
@@ -33,7 +35,7 @@
     </div>
     
     <div id="section2" class="h-screen w-screen flex flex-col items-center bg-cover bg-center" style="background-image: url('../resources/clouds.jpg');">
-       <div class="my-24 l:my-12 lg:my-12 md:my-24 flex flex-col items-center">
+       <div class="my-24 xl:my-12 lg:my-12 md:my-24 flex flex-col items-center">
             <a id="section2NavB"></a>
             <div class="font-extrabold text-center xl:mt-8 lg:mt-8 md:mt-6 mt-2">
                 <span id="section2Header" class="text-4xl md:text-5xl lg:text-6xl xl:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-clouds-light via-cyan-very-light to-orange-sun duration-1000">El inicio de nuestra historia</span> <br>
@@ -57,9 +59,9 @@
     </div>
     
 
-    <div class="h-screen w-screen flex flex-col items-center bg-cover bg-center" id="section3" style="background-image: url('../resources/section2BG.jpg');">
-        <span id="section3Header" class="text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-Bungee xl:mt-16 lg:mt-16 md:mt-16 mt-8">Nuestro mes</span>
-        
+    <div id="section3" class="h-screen w-screen flex flex-col items-center bg-cover bg-center"  style="background-image: url('../resources/section2BG.jpg');">
+        <a id="section3NavB" class="my-24 xl:my-12 lg:my-12 md:my-24"></a>
+        <span id="section3Header" class="text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-Bungee ">Nuestro mes</span>
         <div class=" text-center h-3/5 w-4/5 mt-20 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
             <div class="flex flex-col items-center">
                 <div class="my-auto relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md ">
@@ -67,42 +69,66 @@
                         <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/iK5Q05vo5KRrH3yniB" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
                     </div>
                     <div class="p-6">
-                    <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">Juegos más jugados:</h5>
+                    <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased"> Nuestros juegos:</h5>
                     <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                        -WOW <br>
-                        -Pokemon <br>
-                        -Minecraft
+                        <div class="flex space-x-4 justify-center">
+                            <img src="../resources/pics/minecraft.png" class="w-16 h-16" alt="">
+                            <img src="../resources/pics/pokemon.png" class="w-16 h-16" alt="">
+                            <img src="../resources/pics/wow.jpg" class="w-16 h-16" alt="">
+                        </div>
+                        
                     </p>
                     </div>
                     <div class="p-6 pt-0">
-                    <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-                        Next
-                    </button>
+                        <a id="section3NavN"></a>
                     </div>
                 </div>
             </div>
 
             <div>
                 <div class="shape1">
-                    <div class=""><img class="w-44 h-44 transform transition-transform hover:scale-110" src="../resources/photoSet/1.jpeg" alt=""></div>
-                    <div class=""><img class="w-44 h-44 transform transition-transform hover:scale-110" src="../resources/photoSet/17.jpeg" alt=""></div>
-                    <div class="big1 "><img class="w-full h-44 transform transition-transform hover:scale-110" src="../resources/photoSet/5.jpeg" alt=""></div>
-                    <div class="big2 "><img class="w-full h-44 transform transition-transform hover:scale-110" src="../resources/photoSet/22.jpeg" alt=""></div>
-                    <div class=""><img class="w-44 h-44 transform transition-transform hover:scale-110" src="../resources/photoSet/16.jpeg" alt=""></div>
-                    <div class=""><img class="w-44 h-44 transform transition-transform hover:scale-110" src="../resources/photoSet/29.jpeg" alt=""></div>
-                    <div class=""><img class="w-44 h-44 transform transition-transform hover:scale-110" src="../resources/photoSet/25.jpeg" alt=""></div>
-                    <div class=""><img class="w-44 h-44 transform transition-transform hover:scale-110" src="../resources/photoSet/30.jpeg" alt=""></div>
-                    <div class="big3 "><img class="w-full h-44 transform transition-transform hover:scale-110" src="../resources/photoSet/14.jpeg" alt=""></div>
+                    <div class=""><img class="w-44 h-44 transform transition-transform hover:scale-110 rounded-lg" src="../resources/photoSet/1.jpeg" alt=""></div>
+                    <div class=""><img class="w-44 h-44 transform transition-transform hover:scale-110 rounded-lg" src="../resources/photoSet/17.jpeg" alt=""></div>
+                    <div class="big1 "><img class="w-full h-44 transform transition-transform hover:scale-110 rounded-lg" src="../resources/photoSet/5.jpeg" alt=""></div>
+                    <div class="big2 "><img class="w-full h-44 transform transition-transform hover:scale-110 rounded-lg" src="../resources/photoSet/22.jpeg" alt=""></div>
+                    <div class=""><img class="w-44 h-44 transform transition-transform hover:scale-110 rounded-lg" src="../resources/photoSet/16.jpeg" alt=""></div>
+                    <div class=""><img class="w-44 h-44 transform transition-transform hover:scale-110 rounded-lg" src="../resources/photoSet/29.jpeg" alt=""></div>
+                    <div class=""><img class="w-44 h-44 transform transition-transform hover:scale-110 rounded-lg" src="../resources/photoSet/25.jpeg" alt=""></div>
+                    <div class=""><img class="w-44 h-44 transform transition-transform hover:scale-110 rounded-lg" src="../resources/photoSet/30.jpeg" alt=""></div>
+                    <div class="big3 "><img class="w-full h-44 transform transition-transform hover:scale-110 rounded-lg" src="../resources/photoSet/14.jpeg" alt=""></div>
                 </div>
             </div>
+        </div>
+        
+    </div>
 
-            
+    <div id="section4" class="h-screen w-screen flex flex-col items-center bg-center"  style="background-image: url('../resources/section4BG.jpg');">
+        <a id="section4NavB" class="my-24 xl:my-12 lg:my-12 md:my-24"></a>
+        <span id="section3Header" class="text-4xl md:text-5xl lg:text-6xl xl:text-8xl text-white font-extrabold animate-gradient rounded-lg p-4">Lo que nos unió</span>
+    
+        <div class="text-center h-3/5 w-4/5 mt-20 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
+            <div class="content-center flex items-center justify-center">
+                <img src="../resources/photoSet/2.jpeg" class="w-96 h-96 rounded-lg" alt="">
+            </div>
+            <div class="content-center flex items-center justify-center">
+                <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+                    <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-lg mx-auto" src="../resources/photoSet/15.jpeg" alt="" width="384" height="512">
+                    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                      <blockquote>
+                        <p class="text-lg font-medium text-white">
+                          “Una gomita fue suficiente para estar juntos”
+                        </p>
+                      </blockquote>
+                      <figcaption class="font-medium">
+                        <div class="text-sky-500 dark:text-sky-400  ">
+                          Con cariño, Yeison
+                        </div>
+                      </figcaption>
+                    </div>
+                  </figure>
+            </div>
 
         </div>
-
-    </div>
-    
-    
-    
+    </div> 
 </body>
 </html>
