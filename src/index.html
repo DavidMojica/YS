@@ -12,35 +12,94 @@
     <!-- Scripts -->
     <script src="../build/elements.js" defer></script>
     <script src="../build/DOMManipulation.js" defer></script>
+    <script src="../build/actions.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <title>Document</title>
 </head>
 <body class="overflow-x-hidden">
-    <div class="bg-cover bg-center h-screen w-screen flex flex-col items-center" style="background-image: url('../resources/mainBG.jpg');">
-        <div class="font-extrabold my-10 md:my-24 lg:my-30 xl:my-40  text-center">
-            <span class=" text-3xl md:text-5xl lg:text-6xl xl:text-8xl mx-auto animate-gradient text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500 transition-all duration-1000 shadow-around">
+    <div id="section1" class="bg-cover bg-center h-screen w-screen flex flex-col items-center" style="background-image: url('../resources/mainBG.jpg');">
+        <div class="font-extrabold my-56 md:my-24 lg:my-30 xl:my-40  text-center">
+            <span class=" text-4xl md:text-5xl lg:text-6xl xl:text-8xl mx-auto animate-gradient text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500 transition-all duration-1000 shadow-around">
                 <i class="fas fa-heart " aria-hidden="true"></i> Yeison & Yurih <i class="fas fa-heart " aria-hidden="true"></i>
-            </span>
-            <br>
+            </span> <br>
             <span class="text-xl md:text-3xl lg:text-4xl xl:text-5xl mx-auto animate-bounce text-transparent bg-clip-text bg-gradient-to-r from-pink-800 to-violet-500 transition-all ">
                 <i class="fa fa-hashtag"></i> 2 Meses Rewind
             </span>
         </div>
-        <div class="my-10 ">
-            <a href="#section2" id="section1Nav" class="font-extrabold"></a>
+        <div class="my-10">
+            <a id="section1Nav"></a>
         </div>
         <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t w-screen from-cyan-clouds to-transparent z-10"></div>
     </div>
     
-    <div id="preSection2" class="h-screen w-screen flex flex-col items-center bg-cover bg-center" style="background-image: url('../resources/clouds.jpg');">
-        <div class="block w-screen left-0 right-0 top-94 h-16 bg-gradient-to-t from-cyan-clouds-light to-transparent z-10"></div>
-        <div class="fixed w-screen left-0 right-0 top-0 h-16 bg-gradient-to-b from-cyan-clouds-light to-transparent z-10"></div>
-        <span class=""></span>
+    <div id="section2" class="h-screen w-screen flex flex-col items-center bg-cover bg-center" style="background-image: url('../resources/clouds.jpg');">
+       <div class="my-24 l:my-12 lg:my-12 md:my-24 flex flex-col items-center">
+            <a id="section2NavB"></a>
+            <div class="font-extrabold text-center xl:mt-8 lg:mt-8 md:mt-6 mt-2">
+                <span id="section2Header" class="text-4xl md:text-5xl lg:text-6xl xl:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-cyan-clouds-light via-cyan-very-light to-orange-sun duration-1000">El inicio de nuestra historia</span> <br>
+                <span class="text-3xl font-rubik-doodle text-transparent bg-clip-text bg-gradient-to-r from-orange-sun via-cyan-very-light to-cyan-clouds-light">5.11.2023</span>
+            </div>
+            <div class="flex flex-row justify-center mt-28">
+                <div class="text-center h-36 w-36 md:h-64 md:w-64 lg:h-80 lg:w-80 xl:h-96 rounded-s-full bg-cover bg-top overflow-hidden">
+                    <img src="../resources/section2/img1.jfif" alt="Imagen 1" class="w-full h-full object-cover" />
+                </div>
+                <div class="flex items-center justify-center h-36 w-36 md:h-64 md:w-64 lg:h-80 lg:w-80 xl:h-96 bg-cover bg-top overflow-hidden">
+                    <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/n7xN8Tqaagpol3DkyF" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                </div>
+                
+                <div class="text-center h-36 w-36 md:h-64 md:w-64 lg:h-80 lg:w-80 xl:h-96 xl:w-96 rounded-e-full bg-cover bg-center overflow-hidden">
+                    <img src="../resources/section2/img2.jfif" alt="Imagen 2" class="w-full h-full object-cover" />
+                </div>
+            </div>
+            
+            <a id="section2NavN" class="mt-20 opacity-0"></a>
+       </div>
     </div>
     
 
-    <div class="h-screen w-screen bg-cover bg-center flex flex-col items-center" id="section2" style="background-image: url('../resources/section2BG.jpg');">
+    <div class="h-screen w-screen flex flex-col items-center bg-cover bg-center" id="section3" style="background-image: url('../resources/section2BG.jpg');">
+        <span id="section3Header" class="text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-Bungee xl:mt-16 lg:mt-16 md:mt-16 mt-8">Nuestro mes</span>
         
+        <div class=" text-center h-3/5 w-4/5 mt-20 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
+            <div class="flex flex-col items-center">
+                <div class="my-auto relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md ">
+                    <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
+                        <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/iK5Q05vo5KRrH3yniB" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                    </div>
+                    <div class="p-6">
+                    <h5 class="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">Juegos más jugados:</h5>
+                    <p class="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                        -WOW <br>
+                        -Pokemon <br>
+                        -Minecraft
+                    </p>
+                    </div>
+                    <div class="p-6 pt-0">
+                    <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                        Next
+                    </button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="shape1">
+                    <div class=""><img class="w-44 h-44 transform transition-transform hover:scale-110" src="../resources/photoSet/1.jpeg" alt=""></div>
+                    <div class=""><img class="w-44 h-44 transform transition-transform hover:scale-110" src="../resources/photoSet/17.jpeg" alt=""></div>
+                    <div class="big1 "><img class="w-full h-44 transform transition-transform hover:scale-110" src="../resources/photoSet/5.jpeg" alt=""></div>
+                    <div class="big2 "><img class="w-full h-44 transform transition-transform hover:scale-110" src="../resources/photoSet/22.jpeg" alt=""></div>
+                    <div class=""><img class="w-44 h-44 transform transition-transform hover:scale-110" src="../resources/photoSet/16.jpeg" alt=""></div>
+                    <div class=""><img class="w-44 h-44 transform transition-transform hover:scale-110" src="../resources/photoSet/29.jpeg" alt=""></div>
+                    <div class=""><img class="w-44 h-44 transform transition-transform hover:scale-110" src="../resources/photoSet/25.jpeg" alt=""></div>
+                    <div class=""><img class="w-44 h-44 transform transition-transform hover:scale-110" src="../resources/photoSet/30.jpeg" alt=""></div>
+                    <div class="big3 "><img class="w-full h-44 transform transition-transform hover:scale-110" src="../resources/photoSet/14.jpeg" alt=""></div>
+                </div>
+            </div>
+
+            
+
+        </div>
+
     </div>
     
     
