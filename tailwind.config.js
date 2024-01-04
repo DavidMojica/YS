@@ -12,6 +12,7 @@ module.exports = {
       },
       fontFamily:{
         'rubik-doodle': ['Rubik Doodle Shadow', 'cursive'],
+        'Bungee':['Bungee Spice', 'sans-serif']
       },
       spacing:{
        
