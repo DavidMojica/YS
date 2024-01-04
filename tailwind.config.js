@@ -9,6 +9,9 @@ module.exports = {
       },
       fontFamily:{
         'rubik-doodle': ['Rubik Doodle Shadow', 'cursive'],
+      },
+      spacing:{
+       
       }
     },
   },
