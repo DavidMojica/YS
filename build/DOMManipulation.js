@@ -14,6 +14,7 @@ section2NavButtonNext.display(section2NavN);
 //Desplazar entre secciones
 //Animate section 2 header
 const SlideinAction = new Actions.Slidein();
+const FadeInAction = new Actions.FadeIn();
 const section2Header = document.getElementById('section2Header');
 const section1 = document.getElementById('section1');
 const section2 = document.getElementById('section2');
@@ -23,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
         Actions.Displace(e, section2);
         if (section2Header)
             SlideinAction.Animate(section2Header);
+        if (section2NavN)
+            FadeInAction.AnimateDelay(section2NavN, 3);
     });
     section2NavB === null || section2NavB === void 0 ? void 0 : section2NavB.addEventListener('click', function (e) {
         Actions.Displace(e, section1);

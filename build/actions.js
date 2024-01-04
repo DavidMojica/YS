@@ -21,6 +21,24 @@ var Actions;
         }
     }
     Actions.Slidein = Slidein;
+    class FadeIn extends Animate {
+        constructor() {
+            super(...arguments);
+            this.name = "animate-fadein";
+            this.nameToRemove = "opacity-0";
+            this.duration = 3;
+        }
+        Animate(element) {
+            element.classList.remove(this.nameToRemove);
+            element.classList.add(this.name);
+        }
+        AnimateDelay(element, seconds) {
+            setTimeout(() => {
+                this.Animate(element);
+            }, seconds * 1000);
+        }
+    }
+    Actions.FadeIn = FadeIn;
     function Displace(e, target) {
         e.preventDefault();
         if (target) {
